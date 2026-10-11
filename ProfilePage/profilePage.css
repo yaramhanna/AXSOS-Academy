@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+nav, nav div {
+    display: flex;
+    align-items: center;
+}
+nav {
+    height: 70px;
+    background: black;
+    color: white;
+    justify-content: space-between;
+    padding: 0 max(calc((100% - 830px) / 2), 20px);
+}
+nav h1 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-right: 30px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+}
+nav button {
+    background: #18a2b8;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    font-size: 20px;
+}
+.main {
+    width: 830px;
+    margin: 35px auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+}
+.left { 
+    width: 520px; 
+}
+.right { 
+    width: 280px; 
+}
+
+.user-card, .education, .connection-requests, .connections {
+    border: 2px solid #ccc;
+    margin-bottom: 35px;
+    background: white;
+}
+.user-card { 
+    position: relative; 
+}
+.topOfCard {
+    height: 110px;
+    background: #18a2b8;
+}
+.profile-pic {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    padding: 5px;
+    position: absolute;
+    top: 50px;
+    left: 35px;
+    object-fit: cover;
+}
+.profile-details {
+    padding: 55px 30px 20px 35px;
+}
+.profile-details h2 {
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.profile-details p {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+.profile-details p img {
+    width: 20px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+.edit-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+    color: #23649a;
+}
+.edit-profile img {
+    width: 25px;
+}
+.section-title {
+    background: #303030;
+    color: white;
+    padding: 12px 15px;
+}
+.section-title h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+.content { 
+    padding: 17px 28px; 
+}
+.content h3 {
+    font-size: 21px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+.content p {
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+.dates { 
+    color: #777; 
+}
+.number {
+    background: #ddd;
+    color: #333;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.connection-requests .section-title h2, .connections .section-title h2 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 19px;
+    white-space: nowrap;
+}
+.request, .connection {
+    display: flex;
+    align-items: center;
+    padding: 8px 5px;
+}
+.requests { 
+    padding: 10px; 
+}
+.request { 
+    margin-bottom: 8px; 
+}
+.img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.request h3, .connection h3 {
+    font-size: 19px;
+    font-weight: normal;
+    margin-left: 12px;
+}
+.request h3 { 
+    margin-right: auto; 
+}
+.request-icons {
+    display: flex;
+    gap: 7px;
+}
+.request-icon {
+    width: 35px;
+    height: 35px;
+}
+.connection-list { 
+    padding: 5px 10px 0; 
+}
+.connection { 
+    gap: 12px; 
+    padding: 7px 5px; 
+}
+.connection-list > div:last-child {
+    margin: 0 -10px;
+    padding: 10px;
+    border-top: 2px solid #ccc;
+}
+.view-more {
+    color: #23649a;
+    font-size: 18px;
+}
