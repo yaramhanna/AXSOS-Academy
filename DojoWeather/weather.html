@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Report</title>
+  <link rel="stylesheet" href="weather.css" />
+</head>
+
+<body>
+  <nav>
+      <h2 class="title">DojoWeather</h2>
+    <div class="cities" onclick="alert('This page is loading the weather report')">
+      <a href="#">Burbank</a>
+      <a href="#">Chicago</a>
+      <a href="#">Dallas</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="subTitle">
+      <h3>San Jose</h3>
+      <div class="tempUnits">
+        <p>show temperature in</p>
+        <select name="temp">
+          <option value="F">&deg;F</option>
+          <option value="C">&deg;C</option>
+        </select>
+      </div>
+    </div>
+    <hr />
+    <div class="weather">
+      <div class="border">
+        <p class="day">Today</p>
+        <img class="img" src="Imports/rainy.png" alt="rainy" width="90px" />
+        <p class="report">some rain</p>
+        <div class="tempReport">
+          <p class="R">24&deg;</p>
+          <p class="L">18&deg;</p>
+        </div>
+      </div>
+      <div class="border">
+        <p class="day">Tomorrow</p>
+        <img class="img" src="Imports/sunny.png" alt="sunny" width="90px" />
+        <p class="report">some sun</p>
+        <div class="tempReport">
+          <p class="R">27&deg;</p>
+          <p class="L">19&deg;</p>
+        </div>
+      </div>
+      <div class="border">
+        <p class="day">Friday</p>
+        <img class="img" src="Imports/cloudy.png" alt="cloudy" width="90px" />
+        <p class="report">some clouds</p>
+        <div class="tempReport">
+          <p class="R">21&deg;</p>
+          <p class="L">16&deg;</p>
+        </div>
+      </div>
+      <div class="border">
+        <p class="day">Saturday</p>
+        <img class="img" src="Imports/sunny.png" alt="sunny" width="90px" />
+        <p class="report">some sun</p>
+        <div class="tempReport">
+          <p class="R">26&deg;</p>
+          <p class="L">21&deg;</p>
+        </div>
+      </div>
+    </div>
+    <div class="cookieAlert">
+      <img class="cookie" src="Imports/cookie.png" alt="cookie" width="40px" />
+      <p class="top">
+        <strong>Stop! Cookie time</strong> <br />
+        We use cookies(sadly not the edible ones) to personalize content and
+        ads, to provide social media features and to analyse our traffic.
+        <a href="#">Read more...</a>
+      </p>
+      <button class="btn"><strong> I Accept</strong></button>
+    </div>
+  </div>
+  <script src="weather.js"></script>
+</body>
+
+</html>
