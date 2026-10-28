@@ -2,21 +2,16 @@ import random
 
 def randInt(min=0, max=100):
     if min > max:
-        temp = min
-        min = max
-        max = temp
+        min, max = max, min
+
+    if max < 0:
+        max = 0
+    if min < 0:
+        min = 0
         
-    span = max - min
-    
-    num = (random.random() * span) + min
-    
-    integer_part = int(num) if num >= 0 else int(num) - 1
-    decimal_part = num - integer_part
-    
-    if decimal_part >= 0.5:
-        return integer_part + 1
-    else:
-        return integer_part
+    num = (random.random() * max - min) + min
+
+    return round(num)
 
 
 # 1. No arguments -> 0 to 100
